@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="if , while , for , switch , arrays/if , while , for , switch , arrays.vcxproj" />
+</Solution>
