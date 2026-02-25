@@ -1,0 +1,18 @@
+﻿#include <iostream>
+#include <string>
+using namespace std;
+void showGrades(string names[], int grade[], int size);
+int main() {
+    int gradeLength;
+    cout << "How many names do you want to enter: ";
+    cin >> gradeLength;
+
+    string* names = new string[gradeLength];
+    int* grade = new int[gradeLength];
+
+    // ... TODO: read names and grades, call showGrades(names, grade, gradeLength);
+
+    delete[] names;
+    delete[] grade;
+    return 0;
+}

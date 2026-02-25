@@ -29,7 +29,7 @@ int main() {
 		case 3:
 			cout << " welcome here" << endl;
 			return 0;
-		defult : 
+		default : 
 			cout << " wrong choice !!" << endl;
 		}
 

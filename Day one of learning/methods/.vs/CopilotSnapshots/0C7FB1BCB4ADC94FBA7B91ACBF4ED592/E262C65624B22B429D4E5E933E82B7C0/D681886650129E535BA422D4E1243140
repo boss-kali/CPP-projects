@@ -1,0 +1,29 @@
+﻿#include <iostream>
+#include <string>
+using namespace std;
+void showGrades(string names[], int grade[], int size);
+int main() {
+	int gradeLength;
+	cout << "How many names do you want to enter: ";
+	cin >> gradeLength;
+
+	// allocate arrays dynamically now that we know the size
+	string* names = new string[gradeLength];
+	int* grade = new int[gradeLength];
+
+	// Example: you can read data into the arrays here if needed
+	// for (int i = 0; i < gradeLength; ++i) {
+	//     cout << "Enter name " << (i+1) << ": ";
+	//     cin >> names[i];
+	//     cout << "Enter grade for " << names[i] << ": ";
+	//     cin >> grade[i];
+	// }
+
+	// ...use names and grade (for example, call showGrades)
+
+	// free allocated memory
+	delete[] names;
+	delete[] grade;
+
+	return 0;
+}

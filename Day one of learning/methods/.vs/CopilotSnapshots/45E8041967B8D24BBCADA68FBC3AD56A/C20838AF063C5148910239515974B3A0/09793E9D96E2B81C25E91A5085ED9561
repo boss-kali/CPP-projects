@@ -1,0 +1,16 @@
+﻿#include <iostream>
+#include <string>
+using namespace std;
+void showGrades(string names[], int grade[], int size);
+int main() {
+    int listLength;
+    cout << "How many names do you want to enter: ";
+    cin >> listLength;
+    if (listLength <= 0) return 0;
+    string* names = new string[listLength];
+
+    // ... (rest of program should populate names and use showGrades) ...
+
+    delete[] names;
+    return 0;
+}
