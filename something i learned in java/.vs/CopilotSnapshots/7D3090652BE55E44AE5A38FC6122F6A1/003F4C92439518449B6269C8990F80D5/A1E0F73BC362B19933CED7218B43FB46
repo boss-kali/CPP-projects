@@ -1,0 +1,22 @@
+﻿#include <iostream>
+
+using namespace std;
+int main() {
+	cout << " How many number do you want to enter: ";
+	int times;
+	int number;
+	int sum = 0;
+	cin >> times;
+	// Validate input to avoid division by zero or negative counts
+	if (times <= 0) {
+		cout << "\nPlease enter a positive number of values." << endl;
+		return 0;
+	}
+	for (int i = 0; i < times; i++) {
+		cout << "\nenter a number: ";
+		cin >> number;
+		sum += number;
+	}
+	double avg = static_cast<double>(sum) / times;
+	cout << "\nSum = " << sum << "\naverage = " << avg << endl;
+}
